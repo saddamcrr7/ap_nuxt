@@ -1,0 +1,52 @@
+.o-hero {
+  display: block;
+  padding-top: 213px;
+  padding-bottom: 213px;
+  background: $grey;
+  
+  &__container {
+    @include make-container();
+    @include default-max-widths();
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 9.05vw;
+    line-height: 1.4;
+    letter-spacing: -0.75px;
+    svg {
+        width: 1em;
+        height: auto;
+      }
+  }
+
+  &__title-icon-wrapper {
+    margin-top: -40px;
+    overflow: hidden;
+    height: 190px;
+  }
+
+  .c-animaetLine__wrapper {
+    margin-top: -0.475em;
+  }
+
+
+  &__title-a {
+    margin-left: -0.45em;
+  }
+
+  &__line > div > div {
+    display: flex !important;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__bottom-text {
+    font-size: 21px;
+  }
+
+}

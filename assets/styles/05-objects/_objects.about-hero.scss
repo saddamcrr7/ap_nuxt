@@ -1,0 +1,50 @@
+.o-about-hero  {
+    position: relative;
+    padding-top: 8.5rem;
+    padding-bottom: 9rem;
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        background-color: $black;
+    }
+
+    &__image-wrapper {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        opacity: 0.25;
+        overflow: hidden
+    }
+
+    &__image-inner {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45vw;
+
+    }
+
+    &__image {
+        object-fit: cover
+    }
+
+    &__container {
+        @include make-container();
+        @include default-max-widths();
+    }
+
+    &__title {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 9.05vw;
+        line-height: 1.4;
+        letter-spacing: -0.75px;
+
+        .c-animaetLine__wrapper + .c-animaetLine__wrapper {
+            margin-top: -0.475em;
+          }
+        
+    }
+}

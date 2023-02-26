@@ -1,0 +1,12 @@
+.o-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+    &__container {
+        @include make-container();
+        @include default-max-widths();
+    }
+}

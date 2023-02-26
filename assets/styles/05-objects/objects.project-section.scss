@@ -1,0 +1,80 @@
+.o-project-section {
+  padding-bottom: 266px;
+  background-color: $grey;
+
+  &__container {
+    @include make-container();
+    @include default-max-widths();
+
+    position: relative;
+    padding-top: 32px;
+    overflow: hidden;
+  }
+
+  &__border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform-origin: left;
+    background-color: $black;
+  }
+
+  &__row {
+    @include make-row();
+    justify-content: space-between;
+  }
+
+  &__col {
+    @include make-col-ready();
+
+    &--left {
+      @include make-col(3.3);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &--right {
+      @include make-col(7.15);
+    }
+  }
+
+  &__count {
+    color: $white;
+    font-size: 85px;
+    margin-top: -0.6em;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tag {
+    font-size: 13px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+
+  &__icon {
+    width: 42px;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 85px;
+    text-transform: uppercase;
+
+    > div {
+      margin-top: -35px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 10px;
+  }
+}

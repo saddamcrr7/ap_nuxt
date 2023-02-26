@@ -1,0 +1,32 @@
+.o-about-content {
+  background-color: $black;
+  padding-top: 320px;
+  padding-bottom: 60px;
+
+  &__container {
+    @include make-container();
+
+    max-width: 1440px + $grid-gutter-width;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 42px;
+    line-height: 1.4;
+
+    & + & {
+      margin-top: 64px;
+    }
+
+    &:first-child {
+        .c-animaetLine__wrapper:first-child {
+            margin-left: 286px;
+        }
+    }
+
+    &:last-child {
+        max-width: 1152px;
+        margin-left: auto;
+    }
+  }
+}
