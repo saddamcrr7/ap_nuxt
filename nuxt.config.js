@@ -26,11 +26,9 @@ export default {
     script: [
       {
         src: "/scripts/@gsap/shockingly/dist/SplitText.js",
-        body: true,
       },
       {
         src: "/scripts/@gsap/shockingly/dist/DrawSVGPlugin.js",
-        body: true,
       },
     ],
   },
