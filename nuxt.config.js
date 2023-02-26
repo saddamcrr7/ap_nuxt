@@ -25,10 +25,10 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
       {
-        src: "/scripts/@gsap/shockingly/dist/SplitText.js",
+        src: "/scripts/@gsap/shockingly/dist/SplitText.min.js",
       },
       {
-        src: "/scripts/@gsap/shockingly/dist/DrawSVGPlugin.js",
+        src: "/scripts/@gsap/shockingly/dist/DrawSVGPlugin.min.js",
       },
     ],
   },
