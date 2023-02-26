@@ -6,8 +6,8 @@ export default {
     name: "test",
     mode: "out-in",
     afterLeave(el) {
-      console.log('afterLeave', el)
-    }
+      console.log("afterLeave", el);
+    },
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -23,6 +23,16 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [
+      {
+        src: "/scripts/@gsap/shockingly/dist/SplitText.js",
+        body: true,
+      },
+      {
+        src: "/scripts/@gsap/shockingly/dist/DrawSVGPlugin.js",
+        body: true,
+      },
+    ],
   },
 
   styleResources: {
@@ -73,10 +83,6 @@ export default {
       expoScaleEase: false,
       roughEase: false,
       slowMo: true,
-    },
-    clubPlugins: {
-      drawSVG: true,
-      splitText: true,
     },
   },
 

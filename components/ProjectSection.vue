@@ -53,8 +53,7 @@ export default {
   methods: {
     animation() {
       const gsap = this.$gsap,
-        ScrollTrigger = this.$ScrollTrigger,
-        DrawSVGPlugin = this.$DrawSVGPlugin;
+        ScrollTrigger = this.$ScrollTrigger
 
       gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 

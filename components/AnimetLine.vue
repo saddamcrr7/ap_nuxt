@@ -5,6 +5,8 @@
 </template>
 
 <script>
+
+
 export default {
   name: "AnimetLine",
 
@@ -21,8 +23,7 @@ export default {
   methods: {
     animation() {
       const gsap = this.$gsap,
-        ScrollTrigger = this.$ScrollTrigger,
-        SplitText = this.$SplitText;
+        ScrollTrigger = this.$ScrollTrigger
 
       gsap.registerPlugin(ScrollTrigger, SplitText);
 

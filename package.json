@@ -9,24 +9,23 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@gsap/shockingly": "^3.10.4",
-    "gsap": "npm:@gsap/shockingly",
     "@nuxt/content": "^2.4.3",
     "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/svg": "^0.4.0",
     "bootstrap": "^5.2.3",
     "core-js": "^3.25.3",
+    "gsap": "^3.11.4",
     "nuxt": "^2.15.8",
     "nuxt-gsap-module": "^1.7.2",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10",
-    "@nuxtjs/svg": "^0.4.0"
+    "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^1.3.0",
-    "postcss": "^8.3.5",
     "@vueuse/core": "^9.0.0",
     "@vueuse/nuxt": "^9.0.0",
+    "postcss": "^8.3.5",
     "sass": "^1.50.0",
     "sass-loader": "^10.2.1"
   }
